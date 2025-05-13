@@ -7,6 +7,11 @@ export default async function GalleryPage() {
   const cookieStore = cookies()
   const supabase = createServerComponentClient({ cookies: () => cookieStore })
 
+  // Check if user is logged in
+  const {
+    data: { session },
+  } = await supabase.auth.getSession()
+
   // Initial fetch of images (first page)
   const { data: initialImages, count } = await supabase
     .from("images")
@@ -23,7 +28,12 @@ export default async function GalleryPage() {
         </p>
       </ScrollReveal>
 
-      <GalleryWithPagination initialImages={initialImages || []} totalCount={count || 0} />
+      <GalleryWithPagination
+        initialImages={initialImages || []}
+        totalCount={count || 0}
+        isLoggedIn={!!session}
+        userId={session?.user?.id}
+      />
     </div>
   )
 }

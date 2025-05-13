@@ -92,7 +92,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="hero-image absolute inset-0 opacity-40">
           <Image
-            src="https://rsnyriwbzvtprtcbtimc.supabase.co/storage/v1/object/public/images/669bce51-4d7d-44b9-8095-94761b27d965/669bce51-4d7d-44b9-8095-94761b27d965-cirp33gn4ft.jpg"
+            src="cover.jpg"
             alt="Hero background"
             fill
             priority

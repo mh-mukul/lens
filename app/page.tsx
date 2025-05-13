@@ -31,12 +31,6 @@ export default async function Home() {
           </ScrollReveal>
 
           <GalleryGrid images={images || []} />
-
-          {/* <div className="text-center mt-12">
-            <Link href="/gallery">
-              <Button size="lg">View Full Gallery</Button>
-            </Link>
-          </div> */}
         </div>
       </section>
 

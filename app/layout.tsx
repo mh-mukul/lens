@@ -5,13 +5,13 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import { ToastProvider } from "@/components/toast-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Photography Portfolio",
   description: "A modern photography portfolio website",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -26,6 +26,7 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <ToastProvider />
         </ThemeProvider>
       </body>
     </html>

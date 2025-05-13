@@ -46,7 +46,7 @@ export default function About() {
           <div className="about-image">
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
-                src="https://rsnyriwbzvtprtcbtimc.supabase.co/storage/v1/object/public/images/669bce51-4d7d-44b9-8095-94761b27d965/669bce51-4d7d-44b9-8095-94761b27d965-mnfkqohyovi.jpg"
+                src="profile.jpg"
                 alt="Photographer portrait"
                 fill
                 className="object-cover"
