@@ -10,7 +10,7 @@ import { ToastProvider } from "@/components/toast-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Photography Portfolio",
+  title: "LENS by NaFish",
   description: "A modern photography portfolio website",
 }
 
